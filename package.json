@@ -1,0 +1,27 @@
+{
+  "name": "ts-boilerplate",
+  "version": "1.0.0",
+  "description": "Typescipt Boilerplate",
+  "main": "dist/index.js",
+  "author": "tejzpr@gmail.com",
+  "license": "MIT",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "lint": "tslint src/**/*.ts --project ./tslint.json -t verbose",
+    "lint:live": "chokidar src/**/*.ts -c \"tslint src/**/*.ts --project ./tslint.json -t verbose\"",
+    "build": "npm run lint && tsc",
+    "build:live": "npm run lint && concurrently --kill-others \"npm run lint:live\" \"nodemon\""
+  },
+  "dependencies": {
+    "chalk": "2.3.2",
+    "chokidar-cli": "1.2.0",
+    "commander": "2.15.1",
+    "js-yaml": "3.11.0"
+  },
+  "devDependencies": {
+    "concurrently": "3.5.1",
+    "nodemon": "1.17.2",
+    "tslint": "5.9.1",
+    "typescript": "2.8.1"
+  }
+}
