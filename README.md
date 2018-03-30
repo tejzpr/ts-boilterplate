@@ -1,5 +1,5 @@
 # ts-boilerplate
-A Simple Typescript Boilerplate
+A Simple Typescript Boilerplate with Live Build + Lint 
 
 Steps to use this boilerplate:
   1. Checkout code
