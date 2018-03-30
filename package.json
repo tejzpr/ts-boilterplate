@@ -13,6 +13,7 @@
     "build:live": "npm run lint && concurrently --kill-others \"npm run lint:live\" \"nodemon\""
   },
   "dependencies": {
+    "@types/node": "9.6.1",
     "chalk": "2.3.2",
     "commander": "2.15.1",
     "js-yaml": "3.11.0"
